@@ -5,7 +5,7 @@ let date = document.getElementById("date");
 let length = document.getElementById("length");
 let course = document.getElementById("course");
 let teacher = document.getElementById("teacher");
-let instruct = "Instructors";
+let instruct = "Dozenten";
 let form = document.getElementById("form");
 let container = document.querySelector(".container");
 
