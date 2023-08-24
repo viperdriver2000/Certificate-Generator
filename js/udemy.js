@@ -49,7 +49,7 @@ generate.addEventListener("click", (e) => {
     alert("Input fields can't be empty.");
   } else {
     if (instructor.includes(",")) {
-      instruct = "Instructors";
+      instruct = "Dozenten";
     }
     fname.value = "";
     lname.value = "";
@@ -68,20 +68,20 @@ generate.addEventListener("click", (e) => {
     certificate.innerHTML = `<div class="logo">
     <img id="udemy-logo" src="img/udemy-logo.png" alt="">
     <div class="right-side">
-                      <div class="c-no">Certificate no: UC-3308c41b-93cb-485a-9ee3-${rand2}f8ef${rand4}</div>
-                      <div class="c-url">Certificate url: ude.my/UC-3308c41b-93cb-485a-9ee3-${rand2}f8ef${rand4}</div>
-                      <div class="ref-no">Reference Number: 000${rand6}</div>
+                      <div class="c-no">Zertifikatsnummer:: UC-3308c41b-93cb-485a-9ee3-${rand2}f8ef${rand4}</div>
+                      <div class="c-url">Bescheinigungs-URL: ude.my/UC-3308c41b-93cb-485a-9ee3-${rand2}f8ef${rand4}</div>
+                      <div class="ref-no">Referenznummer: 000${rand6}</div>
                   </div>
   </div>
   <div class="content">
-    <h3>CERTIFICATE OF COMPLETION</h3>
+    <h3>ABSCHLUSSBESCHEINIGUNG</h3>
     <h1 id="course-name">${course_name}</h1>
     <h4>${instruct}&nbsp;<b>${instructor}</b></h4>
   </div>
   <div class="user">
     <h1 id="name">${first_name} ${last_name}</h1>
-    <h4>Date &nbsp;<b>${Date}</b></h4>
-    <h4>Length &nbsp;<b>${c_length} total hours</b></h4>
+    <h4>Datum &nbsp;<b>${Date}</b></h4>
+    <h4>Dauer &nbsp;<b>${c_length} Std. gesamt</b></h4>
   </div>
   `;
     document.getElementById("download").style.display = "block";
